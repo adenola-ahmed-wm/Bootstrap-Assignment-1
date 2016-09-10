@@ -346,7 +346,7 @@
              </div>
         </div>
     </div>
-<div class="radio">
+<!-- <div class="radio">
   <form>
       <label class="radio-inline">
         <input type="radio" name="optradio">1
@@ -412,7 +412,7 @@
       <div class="alert alert-warning">
     <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
   </div>
-    </div>
+    </div> -->
 </div>
 <footer  class="row-footer">
     <div class="container">
@@ -462,6 +462,25 @@
        $('[data-toggle="tooltip"]').tooltip();
         });
    </script>
+
+   <script>
+                $(document).ready(function(){
+                    $("#mycarousel").carousel( { interval: 2000 } );
+                    $("#carousel-pause").click(function(){
+                        $("#mycarousel").carousel('pause');
+                    });
+                    $("#carousel-play").click(function(){
+                        $("#mycarousel").carousel('cycle');
+                    });
+                });
+//                modal Javascript piece
+                var modalBtn =  document.getElementById('toggleModal');
+                function modalOpenr(){
+                    $('#reserveModal').modal('toggle');
+                }
+                modalBtn.addEventListener("click", modalOpenr);
+//end
+                </script>
 
 </body>
 
