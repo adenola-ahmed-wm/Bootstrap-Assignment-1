@@ -58,7 +58,7 @@
 
                </ul>
 <ul class="nav navbar-nav navbar-right">
-                   <li><a><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                   <li><a id='toggleModal'><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                </ul>
              </div>
 
@@ -80,8 +80,7 @@
      </form>
 </div>
 <div class="modal-footer">
-  <button style='float:right;' type="button" class="btn btn-default btn-sm"data-dismiss="modal">Cancel</button>
-
+<button style='float:right;' type="button" class="btn btn-default btn-sm"data-dismiss="modal">Cancel</button>
 </div>
 </div>
 </div>
@@ -472,14 +471,18 @@
                     $("#carousel-play").click(function(){
                         $("#mycarousel").carousel('cycle');
                     });
-                });
+                  });
+                  </script>
+                <script>
+
 //                modal Javascript piece
                 var modalBtn =  document.getElementById('toggleModal');
                 function modalOpenr(){
-                    $('#reserveModal').modal('toggle');
+                    $('#loginModal').modal('toggle');
                 }
                 modalBtn.addEventListener("click", modalOpenr);
 //end
+
                 </script>
 
 </body>
